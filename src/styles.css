@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+@font-face {
+  font-family: "Naruto";
+  src: local("njnaruto"), url("./fonts/njnaruto.ttf") format("truetype");
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-block {
+  width: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+.left-block h3 {
+  font-family: "Original Surfer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.left-block p {
+  font-family: "Original Surfer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.left-block img {
+  width: 250px;
+  height: auto;
+}
+
+.akatsuki {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: Naruto;
+  margin: 13px 10px;
+}
+
+.members {
+  border: 1px solid rgb(233, 229, 221);
+  border-radius: 10px;
+  padding: 2px;
+  transition: transform 0.1s ease;
+}
+
+.members:hover {
+  transform: scale(1.1);
+}
+
+.members p {
+  text-align: center;
+}
+
+.akatsuki img {
+  width: 190px;
+  height: auto;
+  border-radius: 10px;
+}
